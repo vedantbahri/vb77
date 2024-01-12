@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word Antonym Finder</title>
+</head>
+<body>
+    <h1>Word Antonym Finder</h1>
+    <p>Enter a word to find its antonym:</p>
+    <form method="POST">
+        <input type="text" name="word" required />
+        <input type="submit" value="Find Opposite" />
+    </form>
+    {% if word %}
+        <h2>The opposite of "{{ word }}" is "{{ opposite_word }}"</h2>
+    {% endif %}
+</body>
+</html>
